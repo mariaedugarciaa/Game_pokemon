@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    font-family: sans-serif;
+
+    background-color: black;
+    position: relative;
+    /* pegar elementos internos do body e colocar onde eu quiser na */
+}
+
+/* Selecionar diversas maneiras 
+-nome da tag=>h1,div,p,audio, span, h2,strong ..
+-nomde da clase => .minha-classe,.meu-conteudo...
+-pelo id=> #reset,#conteudo
+-Selecionar masi de um elemento =>h1,h2,h3{
+fontsize::after}
+*/
+/*
+.reset{
+    display: none; 
+    width: 100px;
+    height: 100px;
+
+    box-model=> elementso tenha margem (distanciamento de outros elementos), borda , padding e content que é o espaçamento interno 
+    
+    cursor: pointer;
+
+
+    position: absolute;
+    z-index: 3;
+     z index é oq fica na profundidade , uma coisa em cima da outra ,vai estar na frente dos outrso elementos  
+}
+.reset:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+     essa função , serve para quando eu passar o mouse ele aumenta um pouquinho e diminui a opacidade , scale é o tanto que eu qr q aumenta ao passsar o mouse  
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    font-family: sans-serif;
+
+    background-color: black;
+
+    position: relative;
+}
+
+.music-control {
+    width: 50px;
+    top: 48px;
+    right: 48px;
+
+    cursor: pointer;
+    position: absolute;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 32px;
+    font-size: 80px;
+}
+
+.game {
+    background-image: url("../assets/scene.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 1280px;
+    height: 720px;
+
+    position: relative;
+}
+
+.character {
+    position: absolute;
+    width: 75px;
+}
+
+#ash {
+    right: 2px;
+    z-index: 1;
+}
+
+#zubat {
+    display: none;
+    right: 90px;
+    top: 550px;
+}
+
+#pikachu {
+    display: none;
+    right: 600px;
+    top: 330px;
+}
+
+#charmander {
+    display: none;
+
+    width: 65px;
+    right: 175px;
+    top: 55px;
+}
+/* locais onde os pokemons tao  */
+
+/* Selecionar de diversas maneiras
+  
+  - nome da tag => h1, img, audio, h2, span, strong, div, p, hr...
+  - nome da classe => .minha-classe, .meu-conteudo, .meu-container
+  - pelo id do elemento => #reset #meu-input #form
+  - selecionar mais de um elemento => h1,h2,h3 {
+    font-size: 32px
+  }
+  */
+
+#reset {
+    display: none;
+
+    /* 
+      box-model => margin,border, padding, content
+      
+      span, strong => não funciona margin...
+  
+      width => largura dessa image
+      height => altura da imagem
+    */
+
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    z-index: 3;
+}
+
+#reset:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
